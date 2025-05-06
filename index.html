@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        overflow y * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: rgb(0 0 33);
+            color: white;
+            font-family: cursive;
+            overflow-x: hidden;
+            overflow-y: auto;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background-color: blue;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.01rem;
+        }
+
+        .left {
+            font-size: 1.04em;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+
+            font-size: 2rem;
+            margin: 28px 0px;
+
+            align-items: center;
+
+
+        }
+
+        .rightSection img {
+            width: 70%;
+            margin: 50px 0;
+
+
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 65vh;
+
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(25, 80, 230);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0px;
+            display: flex;
+
+
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+
+        }
+
+        .image-top {
+            width: 30px;
+            position: relative;
+            top: -32px;
+            left: -9px
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 14px;
+
+
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+
+
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            height: 233px;
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+
+
+        }
+
+        .leftSection .buttons {
+            padding: 40px;
+        }
+
+        .servicesSection,
+        .projectsSection,
+        .contactSection {
+            max-width: 80vw;
+            margin: 60px auto;
+            color: white;
+        }
+
+        .servicesSection h2,
+        .projectsSection h2,
+        .contactSection h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: blueviolet;
+        }
+
+        .service-container,
+        .project-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-box,
+        .project-box {
+            background-color: #1e1e2f;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(138, 43, 226, 0.3);
+            text-align: center;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: auto;
+            gap: 15px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-family: cursive;
+        }
+
+        .contact-form button {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sandeep's portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact Me</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi , I am <span class="purple">Sandeep</span>
+                <div>And I am a Passionate</div>
+
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"><a href="Sandeep Resume.pdf">Download Resume</a></button>
+                    <button class="btn"><a href="https://github.com/SindhavalamSandeep8185">Visit GitHub</a></button>
+                </div>
+
+            </div>
+            <div class="rightSection">
+                <img src="web.webp" alt="">
+
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <div class="text-gray">what I have learnt so far</div>
+            <h1>Technologies Known</h1>
+            <div class="box">
+
+                <div class="vertical">
+                    <img class="image-top" src="Html.png" alt="">
+                    <div class="vertical-title">
+                        Html
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Porro obcaecati, ad voluptatem laboriosam itaque aspernatur
+                        quam perspiciatis suscipit voluptatum ratione sequi excepturi
+                        culpa illum minima nihil accusantium, neque soluta est.
+                    </div>
+
+                </div>
+
+
+
+                <div class="vertical">
+                    <img class="image-top" src="css3.jpeg" alt="">
+                    <div class="vertical-title">
+                        CSS
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Porro obcaecati, ad voluptatem laboriosam itaque aspernatur
+                        quam perspiciatis suscipit voluptatum ratione sequi excepturi
+                        culpa illum minima nihil accusantium, neque soluta est.
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="vertical">
+                    <img class="image-top" src="Js.webp" alt="">
+                    <div class="vertical-title">
+                        JavaScript
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Porro obcaecati, ad voluptatem laboriosam itaque aspernatur
+                        quam perspiciatis suscipit voluptatum ratione sequi excepturi
+                        culpa illum minima nihil accusantium, neque soluta est.
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="vertical">
+                    <img class="image-top" src="bootstrap.png" alt="">
+                    <div class="vertical-title">
+                        Bootstrap
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Porro obcaecati, ad voluptatem laboriosam itaque aspernatur
+                        quam perspiciatis suscipit voluptatum ratione sequi excepturi
+                        culpa illum minima nihil accusantium, neque soluta est.
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+        <!-- Services Section -->
+        <section class="servicesSection">
+            <h2>My Services</h2>
+            <div class="service-container">
+                <div class="service-box">
+                    <h3>Web Design</h3>
+                    <p>I create responsive and user-friendly web designs using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Frontend Development</h3>
+                    <p>Building smooth, interactive, and accessible frontend interfaces using modern tools.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Website Deployment</h3>
+                    <p>Deploying websites on hosting platforms like GitHub Pages, Netlify, and others.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projectsSection">
+            <h2>Projects</h2>
+            <div class="project-container">
+                <div class="project-box">
+                    <h3>Portfolio Website</h3>
+                    <p>My personal portfolio showcasing my work, built using HTML, CSS, and JS.</p>
+                </div>
+                <div class="project-box">
+                    <h3>Weather App</h3>
+                    <p>A simple app fetching real-time weather info using API and displaying it beautifully.</p>
+                </div>
+                <div class="project-box">
+                    <h3>To-Do List</h3>
+                    <p>A basic to-do list web app with features like add, delete, and mark as complete.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contactSection">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="first">
+                <h3>Sandeep's Portfolio</h3>
+            </div>
+            <div class="second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+            <div class="third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+            <div class="fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+
+
+
+        </div>
+        <div class="rights">
+            Copyright © www.sandeepportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+
+</body>
+
+</html>
